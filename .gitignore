@@ -1,0 +1,42 @@
+__pycache__/
+
+data/*
+outputs/*
+
+!data/.gitkeep
+!outputs/.gitkeep
+# Large model files
+*.pt
+*.pth
+*.onnx
+*.safetensors
+
+# Generated data
+*.npz
+*.npy
+
+# RAE model weights and outputs
+src/RAE/models/
+src/RAE/outputs/
+# Outputs and data
+outputs/
+*.npz
+*.pt
+*.png
+*.csv
+
+# Model weights
+models/
+*.safetensors
+*.bin
+*.ckpt
+
+# Eval scripts (broken, mentor fixing)
+src/RAE/eval_imagenet.py
+src/RAE/backupeval_imagenet.py
+src/RAE/fix_*.py
+src/RAE/extract_samples.py
+src/RAE/pack_images.py
+src/RAE/sample_*.png
+src/Scale-RAE/outputs/
+src/Scale-RAE/*.whl

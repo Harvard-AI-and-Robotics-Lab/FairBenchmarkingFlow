@@ -1,0 +1,35 @@
+model:
+    cls: DiT_B_4
+
+dataset:
+    root: /shared/ssd_14T_data/data4share/imagenet_ILSVRC2012
+
+training:
+    log_per_step: 100
+    checkpoint_per_epoch: 10
+
+    num_epochs: 240
+    learning_rate: 0.0001
+    batch_size: 256
+    adam_b2: 0.95
+    ema_type: 'const'
+
+    sample_on_training: True
+    sample_per_epoch: 10
+    fid_per_epoch: 10
+
+    seed: 42
+
+fid:
+    device_batch_size: 20
+    num_samples: 50000
+    cache_ref: weights/fid
+
+sampling:
+    num_steps: 1
+
+# Load checkpoints for eval or resuming training.
+# load_from: CKPT_PATH
+
+load_from: weights/checkpoint_1200960/
+eval_only: True
