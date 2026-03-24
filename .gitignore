@@ -19,11 +19,12 @@ outputs/*
 src/RAE/models/
 src/RAE/outputs/
 # Outputs and data
-outputs/
 *.npz
 *.pt
 *.png
 *.csv
+
+!assets/benchmark_figure.png
 
 # Model weights
 models/
