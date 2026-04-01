@@ -35,7 +35,7 @@ Download from Hugging Face: [https://huggingface.co/datasets/vaishaal/ImageNetV2
 
 ### ReLAIONet
 
-Pending release.
+Download from Hugging Face: [https://huggingface.co/datasets/harvardairobotics/reLAIONet](https://huggingface.co/datasets/harvardairobotics/reLAIONet)
 
 ---
 
