@@ -78,3 +78,15 @@ python src/scripts/compute_composite_score.py --save-bounds data/imagenet_bounds
 # Reuse previously saved bounds for MMHM (for generalization to new evaluation sets):
 python src/scripts/compute_composite_score.py --input data/new_results.csv --reuse-bounds data/imagenet_bounds.json
 ```
+### Citation
+
+If you find this work useful, please cite:
+
+```bibtex
+@article{ravishankar2026fair,
+  title={Fair Benchmarking of Emerging One-Step Generative Models Against Multistep Diffusion and Flow Models},
+  author={Ravishankar, Advaith and Liu, Serena and Wang, Mingyang and Zhou, Todd and Zhou, Jeffrey and Sharma, Arnav and Hu, Ziling and Das, L{\'e}opold and Sobirov, Abdulaziz and Siddique, Faizaan and others},
+  journal={arXiv preprint arXiv:2603.14186},
+  year={2026}
+}
+```
